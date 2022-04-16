@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="top_level_window">
+    <property name="can-focus">False</property>
+    <property name="default-height">400</property>
+    <child>
+      <object class="GtkFixed" id="top_level_window_fixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkFileChooserButton" id="file_chooser_button">
+            <property name="width-request">400</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="on_file_chooser_button_file_set" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="feedforward_button">
+            <property name="label" translatable="yes">Feed forward</property>
+            <property name="width-request">400</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <signal name="clicked" handler="on_feedforward_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">240</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="load_neural_network_button">
+            <property name="label" translatable="yes">Load neural network</property>
+            <property name="width-request">400</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <signal name="clicked" handler="on_load_neural_network_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="result_label">
+            <property name="width-request">200</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <attributes>
+              <attribute name="font-desc" value="Source Code Pro Medium 16"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="result_help_label">
+            <property name="width-request">200</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <property name="label" translatable="yes">Result:</property>
+            <attributes>
+              <attribute name="font-desc" value="Source Code Pro Medium 16"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image">
+            <property name="width-request">500</property>
+            <property name="height-request">500</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <property name="stock">gtk-missing-image</property>
+          </object>
+          <packing>
+            <property name="x">420</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="title_label">
+            <property name="width-request">400</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
+            <property name="margin-end">20</property>
+            <property name="margin-top">20</property>
+            <property name="margin-bottom">20</property>
+            <property name="label" translatable="yes">AGNITIO</property>
+            <attributes>
+              <attribute name="font-desc" value="Source Code Pro Heavy 32"/>
+            </attributes>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
