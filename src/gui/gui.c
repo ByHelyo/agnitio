@@ -36,7 +36,7 @@ int gui_launch(int argc, char **argv)
 
     GtkBuilder *builder = gtk_builder_new();
 
-    gtk_builder_add_from_file(builder, "assets/design.glade", &err);
+    gtk_builder_add_from_file(builder, "assets/gui/design.glade", &err);
 
     if (err != NULL)
     {

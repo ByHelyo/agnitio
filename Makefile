@@ -26,7 +26,7 @@ OBJ = src/gui/gui.o \
       src/utils/string.o \
       src/main.o
 
-ASSETS = assets/design.glade
+ASSETS = assets/gui/design.glade
 
 all: release
 

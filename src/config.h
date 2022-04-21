@@ -13,7 +13,7 @@
 #define MINI_BATCH_SIZE 10
 #define LEARNING_RATE 3.0
 
-#define NETWORK_SAVE "assets/data.txt"
+#define NETWORK_SAVE "assets/network-save/data.txt"
 
 extern size_t sizes_layers[NUM_LAYERS];
 
